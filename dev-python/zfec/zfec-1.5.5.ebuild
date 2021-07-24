@@ -23,6 +23,10 @@ RDEPEND="
 DEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]"
 
+PATCHES=(
+	"${FILESDIR}"/${PN}-1.5.5-no-argparse-setup.patch"
+)
+
 src_install() {
 	distutils-r1_src_install
 
